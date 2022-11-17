@@ -5,7 +5,7 @@ def solution(N, A):
     for element in A:
         if element>=1 and element<=N:
             counter[element -1] = max(base, counter[element -1])+1
-            max_counter = max(counter)
+            max_counter = max(max_counter, counter[element-i])
         elif element == N+1:
             base = max_counter
     
