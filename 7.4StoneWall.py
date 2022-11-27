@@ -5,9 +5,7 @@ def solution(H):
     total = 1
 
     for i in range(len(H)):
-        if H[i] == topbase[-1]:
-            pass
-        else:
+        if H[i] != topbase[-1]:
             while len(topbase) != 0:
                 if H[i]  < topbase[-1]:
                     topbase.pop()
@@ -15,6 +13,9 @@ def solution(H):
                         topbase.append(H[i])
                         total += 1
                         break
+                    else:
+                        pass
+                        
                 elif H[i] > topbase[-1]:
                     total += 1
                     topbase.append(H[i])
