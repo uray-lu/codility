@@ -1,6 +1,13 @@
 def solution(A):
     
+    if len(A) ==0:
+        return 0
     
+    if len(A) == 1:
+        return abs(A[0])
+
+
+        
     for i in range(len(A)):
         A[i] = abs(A[i])
     M = max(A)
