@@ -16,13 +16,6 @@
 
 #N is an integer within the range [1..2,147,483,647].
 
-
-
-
-
-
-
-
 def solution(N):
     
     binary = bin(N)[2:]
