@@ -1,3 +1,7 @@
+
+
+# think reversly !!!
+
 def solution(A):
     
     max_pair = sum(A)
